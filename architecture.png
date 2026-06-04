@@ -1,0 +1,22 @@
+User Prompt
+     │
+     ▼
+Intent Extractor
+     │
+     ▼
+System Designer
+     │
+     ▼
+Schema Generator
+     │
+     ▼
+Validator
+     │
+     ▼
+Repair Engine
+     │
+     ▼
+Runtime Simulator
+     │
+     ▼
+Final Application Config

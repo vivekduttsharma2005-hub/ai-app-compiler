@@ -1,0 +1,83 @@
+[
+  {
+    "type":"normal",
+    "prompt":"Build a CRM with login contacts dashboard"
+  },
+  {
+    "type":"normal",
+    "prompt":"Build a hospital management system"
+  },
+  {
+    "type":"normal",
+    "prompt":"Build an ecommerce store"
+  },
+  {
+    "type":"normal",
+    "prompt":"Build a social media app"
+  },
+  {
+    "type":"normal",
+    "prompt":"Build a learning management system"
+  },
+  {
+    "type":"normal",
+    "prompt":"Build a project management platform"
+  },
+  {
+    "type":"normal",
+    "prompt":"Build a job portal"
+  },
+  {
+    "type":"normal",
+    "prompt":"Build a fitness tracking application"
+  },
+  {
+    "type":"normal",
+    "prompt":"Build a blogging website"
+  },
+  {
+    "type":"normal",
+    "prompt":"Build a food delivery platform"
+  },
+
+  {
+    "type":"edge",
+    "prompt":"Build app"
+  },
+  {
+    "type":"edge",
+    "prompt":"Create software"
+  },
+  {
+    "type":"edge",
+    "prompt":"Build platform"
+  },
+  {
+    "type":"edge",
+    "prompt":"Users must login and not login"
+  },
+  {
+    "type":"edge",
+    "prompt":"Admins have no admin access"
+  },
+  {
+    "type":"edge",
+    "prompt":""
+  },
+  {
+    "type":"edge",
+    "prompt":"Need business application"
+  },
+  {
+    "type":"edge",
+    "prompt":"Make system"
+  },
+  {
+    "type":"edge",
+    "prompt":"Create app urgently"
+  },
+  {
+    "type":"edge",
+    "prompt":"Build product"
+  }
+]
