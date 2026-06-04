@@ -1,4 +1,4 @@
-# AI App Compiler
+# 🤖 AI App Compiler
 
 ## Objective
 
@@ -6,141 +6,290 @@ AI App Compiler converts natural language application requirements into structur
 
 The project follows a compiler-inspired architecture:
 
-User Prompt
-→ Intent Extraction
-→ System Design
-→ Schema Generation
-→ Validation
-→ Repair
-→ Runtime Simulation
+**User Prompt → Intent Extraction → System Design → Schema Generation → Validation → Repair → Runtime Simulation**
 
 ---
 
 ## Features
 
-### Intent Extraction
+### 1. Intent Extraction
 
-Converts user requirements into structured intent.
+Converts user requirements into structured intent JSON.
 
-### System Design
+**Example Input**
 
-Generates:
+```text
+Build a CRM with login, contacts, dashboard, role-based access and analytics.
+```
 
-- Entities
-- Roles
+**Example Output**
 
-### Schema Generation
+```json
+{
+  "app_name": "CRM",
+  "features": [
+    "login",
+    "contacts",
+    "dashboard",
+    "role-based access",
+    "analytics"
+  ]
+}
+```
 
-Generates:
+---
 
-- UI Schema
-- API Schema
-- Database Schema
+### 2. System Design
 
-### Validation Engine
+Automatically generates:
 
-Checks:
+* Entities
+* Roles
+* Application Architecture
 
-- Invalid JSON
-- Missing Keys
-- Structural Errors
+Example:
 
-### Repair Engine
+```json
+{
+  "entities": [
+    "User",
+    "Contact",
+    "Dashboard",
+    "Role",
+    "Analytics"
+  ],
+  "roles": [
+    "Admin",
+    "Manager",
+    "Sales",
+    "Marketing"
+  ]
+}
+```
+
+---
+
+### 3. Schema Generation
+
+Generates application configuration including:
+
+* UI Pages
+* API Endpoints
+* Database Tables
+
+Example:
+
+```json
+{
+  "ui_pages": [
+    "Login",
+    "Dashboard"
+  ],
+  "api_endpoints": [
+    "/login",
+    "/users"
+  ],
+  "database_tables": [
+    "users",
+    "roles"
+  ]
+}
+```
+
+---
+
+### 4. Validation Engine
+
+Detects:
+
+* Invalid JSON
+* Missing Keys
+* Structural Errors
+
+---
+
+### 5. Repair Engine
 
 Automatically repairs:
 
-- Missing sections
-- Missing schema components
+* Missing sections
+* Missing schema components
+* Invalid structures
 
-### Runtime Simulator
+---
 
-Validates execution readiness.
+### 6. Runtime Simulator
 
-### Evaluation Framework
+Simulates execution readiness and reports:
 
-20 Prompt Dataset
+* Generated Pages
+* Generated APIs
+* Generated Database Tables
 
-Metrics:
+---
 
-- Success Rate
-- Failure Rate
-- Validation Failures
-- Repairs
-- Average Latency
+### 7. Evaluation Framework
+
+Evaluates the system using multiple prompts.
+
+Tracked Metrics:
+
+* Success Rate
+* Failure Rate
+* Validation Failures
+* Repair Count
+* Average Latency
+
+---
+
+## Architecture
+
+```text
+User Prompt
+      │
+      ▼
+Intent Extraction
+      │
+      ▼
+System Design
+      │
+      ▼
+Schema Generation
+      │
+      ▼
+Validation Engine
+      │
+      ▼
+Repair Engine
+      │
+      ▼
+Runtime Simulation
+```
 
 ---
 
 ## Project Structure
 
+```text
 ai-app-compiler/
+│
 ├── app.py
-├── pipeline/
-├── runtime/
-├── evaluation/
-├── schemas/
+├── app_schema.py
+├── intent_extractor.py
+├── system_designer.py
+├── schema_generator.py
+├── validator.py
+├── repair_engine.py
+├── simulator.py
+├── evaluator.py
+├── metrics.py
+├── assumptions.py
+├── test_prompts.json
+├── requirements.txt
+├── README.md
+└── architecture.png
+```
 
 ---
 
 ## Technology Stack
 
-- Python
-- Streamlit
-- Groq API
-- Pydantic
+* Python
+* Streamlit
+* Groq API
+* JSON
+* Pydantic
+
+---
+
+## Installation
+
+```bash
+pip install -r requirements.txt
 
 ---
 
 ## Run Locally
 
-pip install -r requirements.txt
-
+```bash
 streamlit run app.py
+```
+
+---
+
+## Example Test Cases
+
+### CRM Application
+
+```text
+Build a CRM with login, contacts, dashboard, role-based access and analytics.
+```
+
+### E-commerce Platform
+
+```text
+Build an ecommerce platform with products, cart, checkout and payments.
+```
+
+### Hospital Management System
+
+```text
+Build a hospital management system for doctors, patients and appointments.
+```
+
+### Edge Case
+
+```text
+Build app
+```
 
 ---
 
 ## Deployment
 
-Deploy on Streamlit Cloud.
-
+Deploy using Streamlit Cloud.
 ---
 
-## Cost vs Quality Tradeoff
+## Cost vs Quality Trade-off
 
-Model: Groq Llama 3
+### Model Used
 
-Advantages:
+Groq Llama 3.3 70B Versatile
 
-- Fast
-- Cheap
-- Easy Deployment
+### Advantages
 
-Tradeoffs:
+* Fast inference
+* Low cost
+* Easy deployment
+* High-quality structured outputs
 
-- Occasional schema inconsistencies
+### Trade-offs
 
-Mitigation:
+* Occasional schema inconsistencies
+* Ambiguous prompt interpretation
 
-- Validation Engine
-- Repair Engine
-- Deterministic Generation
+### Mitigation
 
----
-
-## Evaluation Metrics
-
-The system tracks:
-
-- Success Rate
-- Failure Rate
-- Validation Errors
-- Repair Count
-- Average Latency
+* Validation Engine
+* Repair Engine
+* Deterministic Generation
+* Runtime Simulation
 
 ---
 
 ## Future Improvements
 
-- Cross-layer validation
-- Dynamic runtime generation
-- Real code generation
-- Multi-model orchestration
+* Cross-layer validation
+* Dynamic runtime generation
+* Real code generation
+* Multi-model orchestration
+* Automated UI generation
+* API implementation generation
+
+---
+
+## Author
+
+**Vivek Dutt Sharma**
+
+AI App Compiler – Internship Project Submission
